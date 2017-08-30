@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_name_add_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ho ten"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/et_phone_add_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        android:gravity="center"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Gioi tinh"
+            android:textSize="@dimen/_20sdp"/>
+
+        <RadioButton
+            android:id="@+id/rb_male"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Nam"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rb_female"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Nu"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_15sdp">
+
+        <Button
+            android:id="@+id/btn_save_add_student_dialog"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:background="@drawable/selector_btn_red_green"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"/>
+
+        <Button
+            android:id="@+id/btn_exit_add_student_dialog"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:background="@drawable/selector_btn_red_green"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
